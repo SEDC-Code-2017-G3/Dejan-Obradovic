@@ -1,0 +1,401 @@
+
+/***************
+UNIVERSAL
+***************/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.row{
+    width: 80%;
+    margin: 1% 10%;
+    height: auto;
+    float: left;
+}
+.col-1-of-2{
+    width:50%;
+    float: left;
+}
+
+.col-1-of-3{
+    width: 33.33%;
+    float: left;
+}
+.col-1-of-4{
+    width:25%;
+    float: left;
+}
+.button{
+    background-color:  #E20074;
+    color:#fff;
+    padding: 5px 25px;
+    border: 1px solid #E20074;
+    border-radius:3px;
+    outline: 0;
+    cursor: pointer;
+    transition: transform 0.2s;
+    margin-right: 10px;
+    margin-top: 30px;
+    float: right;
+}
+.button:active{
+    transform: scale(0.98);
+}
+/***************
+HEADER
+***************/
+
+.header{
+    width: 100%;
+    background-color: #e20074;
+    float: left;
+    height: auto;
+}
+.header_text{
+    color:#fff;
+    float: right;
+    text-align: center;
+    margin-top: 10px;
+}
+.logo{
+    display: inline-block;
+}
+.nav{
+    float: left;
+    background-color: white;
+    width: 100%;
+}
+.nav_menu ul{
+    list-style: none;
+}
+.nav_menu li{
+    display: inline-block;
+    border-right: 1px solid gray;
+    padding: 0 5px;
+}
+.nav_menu li:last-child{
+    border: none;
+}
+.select_language{
+    text-align: right;
+}
+
+/***************
+ASIDE
+***************/
+
+.aside{
+    float: left;
+    width:100%;
+}
+.aside img{
+    width: 100%;
+    height: 375px;
+}
+
+/***************
+MAIN CONTENT
+***************/
+
+.main_container{
+    width:100%;
+    height: auto;
+}
+
+/***************
+MOBILE PHONES
+***************/
+
+.mobile_phones{
+    margin-top:80px;
+   height: 400px;
+   box-shadow: -2px 2px 3px grey;
+   border: 1px solid rgb(202, 202, 202);
+}
+.mobile_content{
+    
+    border-right: 1px solid rgb(202, 202, 202);
+    height: 320px;
+}
+.mobile_pic{
+    text-align: center;
+    margin-top:50px;
+}
+.mobile_pic:after{
+    display: block;
+    height: 1px;
+    background-color: rgb(202, 202, 202);
+    content: " ";
+    width: 300px;
+    margin-top: 30px;
+    margin-left: 25px;
+    
+}
+.mobile_price{
+    margin-top:30px;
+    padding: 5px 25px;
+    float: left;
+   color: #E20074;
+   font-weight: bold;
+   text-transform: uppercase;
+}
+
+/***************
+AKTUELNO
+***************/
+
+.actuelno{
+    width:100%;
+    float:left;
+    margin-top:50px;
+}
+.aktuelno_content img{
+    width: 100%;
+}
+.ponuda_za_mladi{
+    text-align: center;
+    letter-spacing: 1px;
+    color:rgb(95, 95, 95);
+    margin:20px;
+}
+.ponuda_za_mladi::first-line{
+    color:#E20074;
+}
+
+/***************
+CASH
+***************/
+
+.cash{
+    width: 100%;
+    height: auto;
+    float: left;
+}
+.pay_bill,
+.add_vaucher{
+    width:99%;
+    background-color: rgb(231, 231, 231);
+    height: 300px;
+}
+.pay_bill_title,
+.add_vaucher_title{
+    padding: 25px;
+    color:#E20074;
+}
+.add_vaucher{
+    float: right;
+}
+.vaucher_number{
+    text-align: left;
+    margin: 32px 0 0 20px;
+}
+.bill_number{
+    text-align: left;
+    margin: 100px 0 0 20px;
+}
+#smetka,
+#number,
+.select_vaucher{
+    width: 97%;
+    padding: 5px 0;
+    border-radius: 5px;
+    outline: none;
+}
+#number{
+    margin-bottom: 20px;
+}
+
+
+/***************
+SUB FOOTER
+***************/
+
+.sub_footer{
+    width: 100%;
+    background-color: rgb(207, 211, 218);
+    float: left;
+    margin-top: 50px;
+}
+
+.thome_suport{
+    width: 95%;
+    text-align: center;
+    background-color: #fff;
+    height: 200px;  
+}
+.icon{
+    font-size: 350%;
+    margin:40px 0 15px 0;
+    color: #e20074;
+    
+}
+.sub_footer_menu ul{
+    list-style: none;
+   text-align: center;
+}
+.sub_footer_menu li{
+    display: inline-block;
+    border: 1px solid #e20074;
+    padding: 10px;
+    margin: 10px 2px 10px 0;
+}
+
+
+/***************
+FOOTER
+***************/
+
+
+.footer{
+    float: left;
+    width:100%;
+    background-color: rgb(58, 58, 58);
+}
+
+/***************
+RESPONSIVE
+***************/
+
+@media (max-width:610px){
+    .row{
+        width:100%;
+        margin:0;
+    }
+
+    .logo{
+        margin:5px 0 0 8px;
+    }
+    .logo img{
+        width:40px;
+    }
+    .header_text{
+        font-size:80%;
+        margin: 8px 5px 0 0;
+    }
+    .select_language{
+        float: left;
+    }
+    .mobile_phones{
+        box-shadow: none;
+        border: none;
+        
+    }
+    .mobile_pic:after{
+         height: 1px;
+         background-color: rgb(202, 202, 202);
+         content: " ";
+         width: 100%;
+         margin-top: 30px;
+         margin-left: 0;
+     }
+    .mobile_content{
+        border-top:1px solid gray;
+        border-right: none;
+    }
+    
+    .add_vaucher{
+        float: left;
+        margin-top: 1px;
+        width:100%;
+    }
+    .pay_bill{
+        width:100%;
+    }
+    .thome_suport{
+        width:100%;
+        border-top: 1px solid gray;
+        margin:0;
+    }
+  
+    .sub_footer_menu li {
+        display: block;
+        width: 170px;
+        border: 1px solid #e20074;
+        padding: 10px;
+        margin: 10px auto;
+    }
+    .col-1-of-2{
+        width: 100%;
+    }
+    .col-1-of-3{
+        width: 100%;
+    }
+    .col-1-of-4{
+        width:100%;
+    }
+}
+@media (min-width:611px) and (max-width:767px){
+    
+    .row{
+      width:  100%;
+      margin:0;
+    }
+    .logo{
+        margin:5px 0 0 8px;
+    }
+    .logo img{
+        width:40px;
+    }
+    .header_text{
+        font-size:80%;
+        margin: 8px 5px 0 0;
+    }
+    .mobile_pic{
+        border-bottom: 1px solid gray;
+         
+    }
+    .mobile_pic:after{
+        width: 0%;
+        height: 0;
+        margin-top: 30px;
+    } 
+    .button{
+        margin-right: 0;
+    }
+    .thome_suport{
+        margin:auto;
+    }
+    .col-1-of-3{
+        width: 33%;
+    }
+    .col-1-of-4{
+        width:50%;
+        margin: 20px 0 5px 0;
+    }
+    .add_vaucher{
+        float: left;
+        margin-top: 1px;
+        width:100%;
+    }
+    .sub_footer_menu li {
+        display: inline-block;
+        font-size:90%;
+        border: 1px solid #e20074;
+        padding: 8px;
+        margin: 10px 2px 10px 0;
+    }
+}
+@media (min-width:768px) and (max-width:1093px){
+
+    .mobile_pic{
+        border-bottom: 1px solid gray;
+         
+    }
+    .mobile_pic:after{
+        width: 0%;
+        height: 0;
+        margin-top: 30px;
+    } 
+
+    .sub_footer_menu li {
+        display: inline-block;
+        font-size:90%;
+        border: 1px solid #e20074;
+        padding: 8px;
+        margin: 10px 2px 10px 0;
+    }
+}
+   
